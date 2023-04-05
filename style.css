@@ -1,0 +1,56 @@
+body {
+	height: 100%;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#everything {    
+	position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.vertbox {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: auto;
+}
+
+
+.frisbeebox {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-around;
+	width: 20%;
+}
+
+.frisbeebutton {
+  transition: transform .7s ease-in-out;
+}
+.frisbeebutton:hover {
+  transform: rotate(360deg);
+}
+
+video {
+	height: 100%
+}
+
+.bottom-bar {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height: 200px;
+	background-color: white;
+	z-index: 10;
+}
