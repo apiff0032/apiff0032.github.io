@@ -7,10 +7,10 @@ body {
 
 #everything {    
 	position:fixed;
-    padding:0;
-    margin:0;
-    top:0;
-    left:0;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -35,14 +35,15 @@ body {
 }
 
 .frisbeebutton {
-  transition: transform .7s ease-in-out;
+	transition: transform .7s ease-in-out;
+	cursor: pointer;
 }
 .frisbeebutton:hover {
-  transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 video {
-	height: 100%
+	height: 100%;
 }
 
 .bottom-bar {
