@@ -37,6 +37,7 @@ body {
 .frisbeebutton {
 	transition: transform .7s ease-in-out;
 	cursor: pointer;
+	object-fit: contain;
 }
 .frisbeebutton:hover {
 	transform: rotate(360deg);
