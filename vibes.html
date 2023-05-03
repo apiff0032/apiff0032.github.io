@@ -1,63 +1,64 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
-	<body>
-		<div id="everything">
-			<div class="frisbeebox">
-				<image id="merch" class="frisbeebutton" src="merch.png"/>
-				<image id="social" class="frisbeebutton" src="social.png"/>
-				<image id="colon" class="frisbeebutton" src="colonoscopy.png"/>
-			</div>
-			<div class="vertbox">
-			
-			
-				<image src="logo.png"/>
-				<video autoplay muted id="craigvipers">
-					<source src="craigvipers.mp4" type="video/mp4">
-				</video>
-			</div>
-			<div class="frisbeebox">
-				<image id="form" class="frisbeebutton" src="interest.png"/>
-				<image id="reviper" class="frisbeebutton" src="reviper.png"/>
-				<image id="pit" class="frisbeebutton" src="getpitvipers.png"/>
-			</div>
+
+<body>
+	<div id="everything">
+		<div class="vertbox">
+			<image src="logo.png" />
+			<video autoplay muted id="craigvipers">
+				<source src="craigvipers.mp4" type="video/mp4">
+			</video>
 		</div>
-	</body>
+		<div class="frisbeebox left">
+			<image id="merch" class="frisbeebutton" src="merch.png" />
+			<image id="social" class="frisbeebutton" src="social.png" />
+			<image id="colon" class="frisbeebutton" src="colonoscopy.png" />
+		</div>
+		<div class="frisbeebox right">
+			<image id="form" class="frisbeebutton" src="interest.png" />
+			<image id="reviper" class="frisbeebutton" src="reviper.png" />
+			<image id="pit" class="frisbeebutton" src="getpitvipers.png" />
+		</div>
+	</div>
+</body>
+
 </html>
 
 <script>
-colon = document.getElementById("colon")
-colon.onclick = function() {
-    window.open('https://www.google.com/search?q=colonoscopy+near+me');
-};
-social = document.getElementById("social")
-social.onclick = function() {
-    window.open('https://www.facebook.com/madcityvibes');
-};
-reviper = document.getElementById("reviper")
-reviper.onclick = function() {
-    vid = document.getElementById("craigvipers")
-	vid.currentTime = 0;
-};
-pit = document.getElementById("pit")
-pit.onclick = function() {
-    window.open('https://www.pitviper.com/');
-};
-merch = document.getElementById("merch")
-merch.onclick = function() {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSebjqBCJ8kCfPyVTluKqDH3fPFxxvgx6v5mx9TXpridrx1SRg/viewform');
-};
-form = document.getElementById("form")
-form.onclick = function() {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSd6bjjqPdi8T7hwV2l3OTXTqgWIUE8nBsBGBdGP8n5Vl1ntRg/viewform');
-};
+	colon = document.getElementById("colon")
+	colon.onclick = function () {
+		window.open('https://www.google.com/search?q=colonoscopy+near+me');
+	};
+	social = document.getElementById("social")
+	social.onclick = function () {
+		window.open('https://www.facebook.com/madcityvibes');
+	};
+	reviper = document.getElementById("reviper")
+	reviper.onclick = function () {
+		vid = document.getElementById("craigvipers")
+		vid.currentTime = 0;
+	};
+	pit = document.getElementById("pit")
+	pit.onclick = function () {
+		window.open('https://www.pitviper.com/');
+	};
+	merch = document.getElementById("merch")
+	merch.onclick = function () {
+		window.open('https://docs.google.com/forms/d/e/1FAIpQLSebjqBCJ8kCfPyVTluKqDH3fPFxxvgx6v5mx9TXpridrx1SRg/viewform');
+	};
+	form = document.getElementById("form")
+	form.onclick = function () {
+		window.open('https://docs.google.com/forms/d/e/1FAIpQLSd6bjjqPdi8T7hwV2l3OTXTqgWIUE8nBsBGBdGP8n5Vl1ntRg/viewform');
+	};
 
-window.onload = function() {
-    // similar behavior as clicking on a link
-	if (Math.floor(Math.random() * 16) == 0) {
-		window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+	window.onload = function () {
+		// similar behavior as clicking on a link
+		if (Math.floor(Math.random() * 16) == 0) {
+			window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+		}
 	}
-}
 </script>
